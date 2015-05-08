@@ -1,0 +1,7 @@
+#! /bin/bash
+#
+#  Replace some text in file names
+#
+
+
+find . -type f|sed -e "p;s/allstaffmeetings/allstaffquestions/" | xargs -n2 mv
