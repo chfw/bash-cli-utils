@@ -23,6 +23,16 @@
 #
 #
 
+function usage(){
+  echo "batch.rename token_src token_dest folder"
+  exit 1
+}
+
+if [ $# != 3 ]
+then
+  usage
+fi
+
 what=$1
 to=$2
 where=$3
